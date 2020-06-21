@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+  padding-top: 20px;
+}
+
+#nav-mobile {
+  background-color: rgb(229, 57, 53);
+  color: #fff;
+}
+#nav-mobile a {
+  color: #fff;
+}
+.sidenav-head {
+  display: none;
+}
+
+.brand-logo img {
+  padding-top: 5px;
+}
+
+.title {
+  width: 100%;
+  color: rgb(66, 66, 66);
+}
+.title::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: rgb(229, 57, 53);
+  width: 50%;
+}
+.title h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+.card-title-food,
+.card-title-food i {
+  font-size: 1.2rem !important;
+}
+.card-title-food {
+  margin: 0;
+  background-color: rgba(229, 57, 53, .8);
+  padding: 14px 20px !important;
+  border-top-right-radius: 10px;
+}
+.card:hover .card-title-food {
+  transition: ease-in .5s;
+  width: 100%;
+  border-top-right-radius: 0;
+  background-color: rgba(229, 57, 53, 1);
+}
+.card-image-food img {
+  min-height: 215px;
+  max-height: 215px;
+}
+.card-home-1 {
+  margin: 10px 0;
+}
+
+.page-footer {
+  padding-top: 0;
+  background-color: rgba(229, 57, 53, 1) !important;
+  text-align: center;
+}
+
+.detail-description {
+  margin-top: 30px;
+}
+.detail-img img {
+  width: 100%;
+  border-radius: 3px;
+}
+.detail-food h5 {
+  margin: 0;
+}
+.detail-ingredients ul {
+  float: left;
+  margin: 0 20px;
+}
+
+.not-found {
+  margin-top: 10%;
+}
+.not-found h1,
+.not-found p {
+  text-align: center;
+}
+
+@media screen and (max-width: 986px) {
+  .sidenav-head {
+    display: block;
+    padding: 20px;
+    padding-top: 25px;
+    text-align: center;
+    background-color: rgb(186, 30, 28);
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .card-title-food,
+  .card-title-food i {
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+  }
+}
